@@ -23,7 +23,7 @@ class HelloWorldBundle extends PluginBundleBase
         MauticFactory $factory,
         $metadata = null,
         $installedSchema = null
-    ) {
+    ): void {
     }*/
 
     /**
@@ -34,7 +34,7 @@ class HelloWorldBundle extends PluginBundleBase
      *
      * @throws \Exception
      */
-    public static function onPluginUpdate(Plugin $plugin, MauticFactory $factory, $metadata = null, Schema $installedSchema = null)
+    public static function onPluginUpdate(Plugin $plugin, MauticFactory $factory, $metadata = null, Schema $installedSchema = null): void
     {
     }
 }
