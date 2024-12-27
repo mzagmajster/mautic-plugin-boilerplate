@@ -7,7 +7,7 @@ Empty Mautic plugin bundle (zero functionality). Tested on **Mautic 4**. Go ahea
 ### Prerequisites
 
 * Composer 2
-* Mautic 4
+* Mautic 5
 
 ### Installing
 
