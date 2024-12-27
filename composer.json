@@ -6,7 +6,7 @@
     "license": "GPL-3.0-or-later",
     "keywords": ["mautic","plugin","integration"],
     "require": {
-        "php": ">=7.4.0 <8.1",
+        "php": ">=8.0.0 <8.4",
         "mautic/core-lib": "^4.0"
     },
     "extra": {

@@ -62,9 +62,11 @@ elif [[ $command == "dev:fixcs" ]]; then
     cd $PLUGIN_FOLDER
 
 elif [[ $command == "plugin:change:namespace" ]]; then
+    PLUGIN_EXTENSION=$(echo "$PLUGIN_NAMESPACE" | sed 's/Bundle/Extension/')
     # Works only the first time.
     find . -type f -name '*.php' -exec sed -i s/HelloWorldBundle/"$PLUGIN_NAMESPACE"/g {} +
     mv HelloWorldBundle.php "$PLUGIN_NAMESPACE.php"
+    mv DependencyInjection/HelloWorldExtension.php "DependencyInjection/$PLUGIN_EXTENSION"
 
 elif [[ $command == "--help" ]]; then
     help_message

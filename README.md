@@ -20,7 +20,7 @@ cd plugins
 git clone <repo-url> HelloWorldBundle
 cd <mautic-root-folder>
 composer install  # You only need this druing development.
-php bin/console mautic:plugins:install --dev  # You should get a message saying one or more plugins have been installed in terminal.
+php bin/console mautic:plugins:install --env=dev  # You should get a message saying one or more plugins have been installed in terminal.
 ```
 
 Typical **update** of plugin source code described below.
@@ -32,7 +32,7 @@ cd <mautic-root-folder>
 rm -rf var/cache/dev/* var/cache/prod/*
 cd plugins/HelloWorldBundle
 git pull origin <branch>
-php bin/console mautic:plugins:reload --dev  # You should get a message saying one or more plugins have been installed in terminal.
+php bin/console mautic:plugins:reload --env=dev  # You should get a message saying one or more plugins have been installed in terminal.
 ```
 
 ### Creating new plugin from this template
