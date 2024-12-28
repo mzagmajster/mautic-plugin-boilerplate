@@ -41,5 +41,5 @@ return function (ContainerConfigurator $configurator): void {
      * @todo Uncomment and adjust when using integration framework.
      */
     /*$services->set('mautic.integration.hwemaple')
-        ->class(MauticPlugin\HelloWorldBunde\Integration\ExampleIntegration::class);*/
+        ->class(MauticPlugin\HelloWorldBundle\Integration\ExampleIntegration::class);*/
 };
