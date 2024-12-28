@@ -37,9 +37,6 @@ return function (ContainerConfigurator $configurator): void {
             '../{'.implode(',', $excludes).'}'
         );
 
-    /**
-     * @todo Uncomment and adjust when using integration framework.
-     */
-    /*$services->set('mautic.integration.hwemaple')
-        ->class(MauticPlugin\HelloWorldBunde\Integration\ExampleIntegration::class);*/
+    $services->set('mautic.integration.mzexample')
+        ->class(MauticPlugin\HelloWorldBundle\Integration\MzExampleIntegration::class);
 };
