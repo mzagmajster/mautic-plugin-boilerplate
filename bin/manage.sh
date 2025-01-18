@@ -66,7 +66,7 @@ elif [[ $command == "plugin:change:namespace" ]]; then
     # Works only the first time.
     find . -type f -name '*.php' -exec sed -i s/HelloWorldBundle/"$PLUGIN_NAMESPACE"/g {} +
     mv HelloWorldBundle.php "$PLUGIN_NAMESPACE.php"
-    mv DependencyInjection/HelloWorldExtension.php "DependencyInjection/$PLUGIN_EXTENSION"
+    mv DependencyInjection/HelloWorldExtension.php "DependencyInjection/$PLUGIN_EXTENSION.php"
 
 elif [[ $command == "--help" ]]; then
     help_message
