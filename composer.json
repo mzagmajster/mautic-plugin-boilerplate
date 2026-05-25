@@ -7,7 +7,7 @@
     "keywords": ["mautic","plugin","integration"],
     "require": {
         "php": ">=8.0.0 <8.4",
-        "mautic/core-lib": "^4.0"
+        "mautic/core-lib": "^5.0"
     },
     "extra": {
         "install-directory-name": "HelloWorldBundle"

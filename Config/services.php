@@ -30,6 +30,7 @@ return function (ContainerConfigurator $configurator): void {
         '.devtools',
         '.env',
         'bin',
+        '.gitkeep',
     ];
 
     $services->load('MauticPlugin\\HelloWorldBundle\\', '../')
@@ -40,6 +41,8 @@ return function (ContainerConfigurator $configurator): void {
     /**
      * @todo Uncomment and adjust when using integration framework.
      */
-    /*$services->set('mautic.integration.hwemaple')
-        ->class(MauticPlugin\HelloWorldBundle\Integration\ExampleIntegration::class);*/
+    /*$services->set('mautic.integration.mzexample')
+        ->class(
+            MauticPlugin\HelloWorldBundle\Integration\MzExampleIntegration::class
+        );*/
 };
